@@ -44,39 +44,56 @@
   }
 
   .hero-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 500px;
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 20px;
+    // margin-top: 20px;
+    // width: 100%;
+    // // max-width: 500px;
+    // text-align: center;
 
-    @media (min-width: 768px) {
-      max-width: 600px;
+    h1 {
+      width: 100%;
     }
 
-    @media (min-width: 1024px) {
+    // @media (max-width: 768px) {
+    //   max-width: 600px;
+    // }
+
+    @media (max-width: 1024px) {
       max-width: 800px;
     }
 
+
     .hero-btn-wrapper {
       display: flex;
-      flex-direction: row;
-      gap: 20px;
+      justify-content: center;
+      // flex-direction: row;
+      // gap: 20px;
       margin-top: 20px;
+
+      .request-btn,
+      .learn-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+        margin: 0 10px;
+        cursor: pointer;
+      }
 
       .request-btn {
         background-color: var(--prise-main-color);
         color: var(--prise-secondary-color);
         border: none;
-        padding: 16px 24px;
-        border-radius: 8px;
-        font-size: 20px;
-        // height: 58px;
-        cursor: pointer;
+        // padding: 16px 24px;
+        // border-radius: 8px;
+        // font-size: 20px;
+        // // height: 58px;
+        // cursor: pointer;
 
         &:hover {
           opacity: 0.7;
@@ -88,11 +105,11 @@
         background-color: var(--prise-secondary-color);
         color: var(--prise-main-color);
         border: none;
-        padding: 16px 24px;
-        border-radius: 8px;
-        font-size: 20px;
-        // height: 58px;
-        cursor: pointer;
+        // padding: 16px 24px;
+        // border-radius: 8px;
+        // font-size: 20px;
+        // // height: 58px;
+        // cursor: pointer;
 
         &:hover {
           opacity: 0.7;
@@ -100,10 +117,14 @@
         }
       }
 
-      @media(max-width: 768px) {
-        .request-btn, .learn-btn {
-          font-size: 16px;
-          height: 53px;
+      @media screen and (max-width: 768px) {
+        .hero-btn-wrapper {
+          flex-direction: column;
+
+          .request-btn,
+          .learn-btn {
+            margin: 10px 0;
+          }
         }
       }
     }
@@ -115,8 +136,8 @@
 
     .products-wrapper {
       img {
-        max-width: 100%;
-        height: 100%;
+      width: 100%;
+        height: auto;
       }
     }
   }
