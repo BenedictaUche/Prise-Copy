@@ -1,0 +1,12 @@
+<div class="accordion-item" [class.open]="isOpen">
+  <div class="accordion-header" (click)="toggleAccordion()">
+    <h3>{{ title }}</h3>
+    <i
+      class="fa"
+      [ngClass]="{ 'fa-chevron-right': !isOpen, 'fa-chevron-down': isOpen }"
+    ></i>
+  </div>
+  <div class="accordion-content" *ngIf="isOpen">
+    <ng-content></ng-content>
+  </div>
+</div>

@@ -1,0 +1,197 @@
+<div class="home-container">
+  <div class="hero-container">
+    <div class="hero-wrapper">
+      <h1>Unified payment solution for schools at all levels</h1>
+      <p>Manage finances of students, your school, cafes, and more</p>
+      <div class="hero-btn-wrapper">
+        <button class="request-btn">Request a live demo</button>
+        <button class="learn-btn">Learn more</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- products section -->
+  <div class="products-container">
+    <div class="products-wrapper">
+      <img
+        src="../../../assets/images/group-cards-desktop.png"
+        alt="Group images of prise components"
+      />
+    </div>
+  </div>
+
+  <!-- what is prise section -->
+  <div class="about-prise-container">
+    <div class="about-prise-wrapper">
+      <div class="about-prise">
+        <h2>What is Prise?</h2>
+        <p>
+          Prise is an educational ERP designed to manage student finances using
+          a smart identity card for payments within the school canteens and/or
+          cafes, while also helping the school stay up-to-date with bills or
+          tuition settlements from guardians or parents.
+        </p>
+      </div>
+      <div class="prise-card">
+        <img
+          src="../../../assets/images/prise-card-img.png"
+          alt="Prise card image"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- why prise section -->
+  <div class="why-prise-container">
+    <div class="why-prise-wrapper">
+      <div class="why-prise">
+        <h2>Why use Prise?</h2>
+        <ul>
+          <li>
+            Increasing need for schools to implement and establish an entirely
+            cashless system.
+          </li>
+          <li class="why-prise-list-blue">
+            A lot of schools are dependent on periodic reconciliation of
+            accounts.
+          </li>
+          <li>
+            Getting pocket money to students is also a challenging task for most
+            parents.
+          </li>
+        </ul>
+      </div>
+      <div class="why-prise-shop-snap">
+        <img
+          src="../../../assets/images/edit-shop-img.png"
+          alt="Snapshot of prise shop page"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- product objectives section -->
+  <div class="product-objectives-container">
+    <div class="product-objectives-wrapper">
+      <div class="product-objectives">
+        <div>
+          <h2>Product Objectives</h2>
+        </div>
+        <div>
+          <ul>
+            <li>To promote cashless behaviour amongst students.</li>
+            <li class="why-prise-list-blue">
+              To allow parents top up students' pocket money easily without
+              having to come to school.
+            </li>
+            <li>
+              To allow parents and school reconcile outstanding payments without
+              hassle.
+            </li>
+            <li class="why-prise-list-blue-last">
+              Allow students to inculcate saving habit
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              To allow parents top up students' pocket money easily without
+              having to come to school.
+            </li>
+            <li class="why-prise-list-blue">
+              Access to remaining pocket money at the end of the term.
+            </li>
+            <li>Spending habits of students can be monitored</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-container">
+    <app-carousel [images]="carouselImages"></app-carousel>
+  </div>
+
+  <!-- comparative advantage section -->
+  <div class="competitive-advantage-container">
+    <div class="competitive-advantage-wrapper">
+      <div>
+        <h2>Competitive Advantage</h2>
+        <ul>
+          <li>Pioneer solution in the competitive space.</li>
+          <li class="why-prise-list-blue">
+            Highly experienced team members with in-depth experience in design,
+            engineering, and technology sectors.
+          </li>
+          <li>
+            Our leadership have 16 years of collective experience developing
+            digital solutions to businesses at different levels spanning,
+            health, fintech, automobile, real estate, and industries
+          </li>
+        </ul>
+      </div>
+      <div class="absolute-img">
+        <img
+          src="../../../assets/images/group-img-adv.png"
+          alt="Group images of prise platform"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- faq section -->
+  <div class="faq-container">
+    <div class="faq-wrapper">
+      <h2>FAQS</h2>
+      <div class="faq-accordion">
+        <app-accordion title="What is Prise?">
+          <p>Prise is a unified payment platform for schools at all levels</p>
+        </app-accordion>
+        <app-accordion title="Who can use Prise?">
+          <p>Prise is a unified payment platform for schools at all levels</p>
+        </app-accordion>
+        <app-accordion title="Can i use Prise from my mobile device?">
+          <p>Prise is a unified payment platform for schools at all levels</p>
+        </app-accordion>
+        <app-accordion title="Can i view my transaction history on Prise?">
+          <p>Prise is a unified payment platform for schools at all levels</p>
+        </app-accordion>
+        <app-accordion title="Can i withdraw my child's eftover pocket money?">
+          <p>Prise is a unified payment platform for schools at all levels</p>
+        </app-accordion>
+        <app-accordion title="Can i integrate Prise into an existing system?">
+          <p>Prise is a unified payment platform for schools at all levels</p>
+        </app-accordion>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <div class="footer-container">
+    <div class="top-footer">
+      <h2>Subscribe to mails</h2>
+      <p>Product updates exactly to you now</p>
+      <form [formGroup]="subscribeForm" (ngSubmit)="onSubmit()">
+        <input type="text" formControlName="email" placeholder="Your email address" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="sub-footer">
+      <div class="contact">
+        <p>Send us an email</p>
+        <a href="mailto:sales@prisesoftware.com">sales&#64;prisesoftware.com</a>
+      </div>
+      <div class="socials-container">
+        <ul>
+          <li>
+            <img src="../../../assets/images/prise-logo-light.svg" alt="" />
+          </li>
+          <li class="prise-small">&#64;2024 Prise Software</li>
+          <li><i class="fa fa-linkedin"></i></li>
+          <li><i class="fa fa-instagram"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

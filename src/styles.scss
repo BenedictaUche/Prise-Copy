@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+// @import "~ngx-slick-carousel/slick/slick.scss";
+// @import "~ngx-slick-carousel/slick/slick-theme.scss";
+
+:root {
+    --prise-main-color: #0E8FAB;
+    --prise-secondary-color: #AEF0FF;
+    --prise-text-gray: #797E88;
+    --prise-subtle-gray: #F8F9FD;
+    // --info-color: #17a2b8;
+    // --warning-color: #ffc107;
+    // --danger-color: #dc3545;
+    // --light-color: #f8f9fa;
+    // --dark-color: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'AirbnbCereal_W_Bk';
+    src: url('./fonts/AirbnbCereal_W_Bk.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'AirbnbCereal_W_Bk', sans-serif;
+    background-color: var(--prise-subtle-gray);
+}
+
+.shadow {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}

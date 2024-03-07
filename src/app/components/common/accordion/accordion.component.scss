@@ -1,0 +1,41 @@
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    // font-size: 15px;
+    font-family: 'Inter', sans-serif;
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      cursor: pointer;
+
+
+      h3 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+
+    .accordion-content {
+      padding: 10px;
+      display: none;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #fff;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &.open {
+      .accordion-content {
+        display: block;
+        max-height: 500px;
+      }
+    }
+  }

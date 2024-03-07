@@ -1,0 +1,18 @@
+<div class="carousel-top-container">
+  <div
+    class="carousel-container"
+    (mouseenter)="stopCarousel()"
+    (mouseleave)="startCarousel()"
+  >
+    <div class="carousel">
+      <div
+        *ngFor="let image of images; let i = index"
+        class="carousel-item"
+        [ngClass]="{ active: i === currentSlide }"
+      >
+        <img [src]="image.src" [alt]="image.alt" />
+      </div>
+    </div>
+  </div>
+  <div #dotsContainer class="dots-container" (click)="nextSlide()"></div>
+</div>
