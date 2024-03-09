@@ -189,6 +189,10 @@
         line-height: 32px;
         font-weight: 300;
         font-size: 20px;
+
+        @media (max-width: 992px) {
+          max-width: 100%;
+        }
       }
 
       .prise-card {
@@ -260,6 +264,7 @@
           display: flex;
           flex-direction: column;
           gap: 24px;
+          max-width: 600px;
 
           li {
             margin-top: 10px;
@@ -327,12 +332,13 @@
       .product-objectives {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
-        gap: 10px;
+        gap: 40px;
 
         @media (max-width: 768px) {
           flex-direction: column;
           justify-content: center;
           padding: 0 3% 10% 3%;
+          gap: 20px;
         }
 
         @media (max-width: 992px) {
@@ -368,15 +374,15 @@
           .why-prise-list-blue {
             color: var(--prise-main-color);
             padding: 15px 0;
-            border-bottom: 1px solid var(--prise-text-gray);
-            border-top: 1px solid var(--prise-text-gray);
+            border-bottom: 1px solid rgba(121, 126, 136, 0.3);
+            border-top: 1px solid rgba(121, 126, 136, 0.3);
           }
 
           .why-prise-list-blue-last {
             color: var(--prise-main-color);
             padding: 15px 0;
-            border-top: 1px solid var(--prise-text-gray);
-            border-bottom: 1px solid var(--prise-text-gray);
+            border-top: 1px solid rgba(121, 126, 136, 0.3);
+            border-bottom: 1px solid rgba(121, 126, 136, 0.3);
           }
         }
       }
@@ -465,8 +471,8 @@
       .why-prise-list-blue {
         color: var(--prise-main-color);
         padding: 15px 0;
-        border-bottom: 1px solid var(--prise-text-gray);
-        border-top: 1px solid var(--prise-text-gray);
+        border-bottom: 1px solid rgba(121, 126, 136, 0.3);
+        border-top: 1px solid rgba(121, 126, 136, 0.3);
       }
     }
 
