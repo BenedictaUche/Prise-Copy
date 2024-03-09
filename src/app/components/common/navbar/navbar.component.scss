@@ -6,7 +6,6 @@ nav {
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
   padding: 10px 3%;
   align-items: center;
   width: 100%;
@@ -25,7 +24,7 @@ nav {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 70px;
     margin: 0;
     padding: 0;
 

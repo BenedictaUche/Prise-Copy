@@ -132,13 +132,19 @@
   }
 
   .products-container {
-    width: 100%;
+
     padding: 5% 0;
+    overflow-x: hidden;
 
     .products-wrapper {
       img {
-        width: 100%;
+        width: 110%;
         height: auto;
+
+        @media (max-width: 992px) {
+          width: 110%;
+          height: auto;
+        }
       }
     }
   }
@@ -612,7 +618,8 @@
     }
 
     .sub-footer {
-      display: flex;
+      display: inline-flex;
+      align-items: center;
       justify-content: space-between;
 
       @media (max-width: 767px) {
