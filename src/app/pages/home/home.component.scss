@@ -536,6 +536,11 @@
     gap: 8rem;
     padding: 3% 5%;
 
+    @media (max-width: 992px) {
+      gap: 5rem;
+      padding: 12% 2% 8% 2%;
+    }
+
     .top-footer {
       h2 {
         color: #ffffff;

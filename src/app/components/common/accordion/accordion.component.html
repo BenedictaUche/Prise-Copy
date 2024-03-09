@@ -3,7 +3,7 @@
     <h3>{{ title }}</h3>
     <i
       class="fa"
-      [ngClass]="{ 'fa-chevron-right': !isOpen, 'fa-chevron-down': isOpen }"
+      [ngClass]="{ 'fa-chevron-right': !isOpen, 'fa-times': isOpen }"
     ></i>
   </div>
   <div class="accordion-content" *ngIf="isOpen">
