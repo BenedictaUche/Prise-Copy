@@ -618,8 +618,8 @@
     }
 
     .sub-footer {
-      display: inline-flex;
-      align-items: center;
+      display: flex;
+      // align-items: center;
       justify-content: space-between;
 
       @media (max-width: 767px) {
@@ -649,20 +649,21 @@
 
         ul {
           list-style: none;
-          display: flex;
+          display: inline-flex;
           align-items: center;
           gap: 15px;
 
           li {
             color: var(--prise-secondary-color);
             font-size: 1.2rem;
-          }
 
-          .prise-small {
-            font-size: 1rem;
+            &.prise-small {
+              font-size: 1rem;
+            }
           }
         }
       }
     }
+
   }
 }
