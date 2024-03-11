@@ -27,6 +27,11 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+
 @font-face {
     font-family: 'AirbnbCereal_W_Bk';
     src: url('./fonts/AirbnbCereal_W_Bk.otf');
