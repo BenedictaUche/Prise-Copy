@@ -26,15 +26,16 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   startCarousel(): void {
     this.interval = setInterval(() => {
       this.showSlides(this.currentSlide + 1);
-    }, 3000);
+    }, 2000);
   }
 
-  // stop image carousel when user hovers over the image
   stopCarousel(): void {
     clearInterval(this.interval);
   }
 
-  // to get to the next slide
+  resumeCarousel(): void {
+    this.startCarousel();
+  }
 
   nextSlide(): void {
     this.showSlides(this.currentSlide + 1);
