@@ -40,7 +40,7 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    padding: 7% 20px;
+    padding: 140px 20px 90px 20px;
 
     @media (max-width: 768px) {
       padding: 24% 3% 0 3%;
@@ -143,8 +143,7 @@
   }
 
   .products-container {
-
-    padding: 5% 0;
+    // padding: 2% 0;
     overflow-x: hidden;
 
     .products-wrapper {
@@ -656,6 +655,8 @@
 
       .socials-container {
         font-family: "AirbnbCereal_W_Bk";
+        padding: 0;
+        margin: 0;
 
         ul {
           list-style: none;
@@ -669,6 +670,10 @@
 
             &.prise-small {
               font-size: 1rem;
+            }
+            a {
+              text-decoration: none;
+              color: var(--prise-secondary-color);
             }
           }
         }
