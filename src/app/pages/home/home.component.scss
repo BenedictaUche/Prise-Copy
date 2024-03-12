@@ -43,12 +43,12 @@
     padding: 140px 20px 90px 20px;
 
     @media (max-width: 768px) {
-      padding: 24% 3% 0 3%;
+      padding: 120px 3% 50px 3%;
     }
 
-    @media (max-width: 992px) {
-      padding: 15% 3% 0 3%;
-    }
+    // @media (max-width: 992px) {
+    //   padding: 120px 3% 50px 3%;
+    // }
   }
 
   .hero-wrapper {
@@ -71,9 +71,6 @@
       p {
         padding: 16px 0;
       }
-
-
-
     }
 
     @media (max-width: 768px) {
