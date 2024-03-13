@@ -1,7 +1,8 @@
 <div class="carousel-top-container">
   <div
     class="carousel-container"
-    (mouseenter)="stopCarousel()"
+    #carouselContainer
+  (mouseenter)="stopCarousel()"
   (mouseleave)="resumeCarousel()"
   (touchstart)="stopCarousel()"
   (touchend)="resumeCarousel()"

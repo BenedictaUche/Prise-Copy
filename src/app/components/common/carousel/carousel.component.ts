@@ -1,4 +1,6 @@
 import { Component, Input, OnInit, AfterViewInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
+import * as Hammer from 'hammerjs';
+
 
 @Component({
   selector: 'app-carousel',
@@ -11,8 +13,27 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   interval: any;
 
   @ViewChild('dotsContainer', { static: false }) dotsContainer!: ElementRef;
+  @ViewChild('carouselContainer', { static: false }) carouselContainer!: ElementRef;
 
   constructor(private renderer: Renderer2) {}
+
+  initializeSwipe(): void {
+    const element = this.carouselContainer.nativeElement;
+    const mc = new Hammer(element);
+
+    mc.on('swipeleft', () => {
+      this.nextSlide();
+    });
+
+    mc.on('swiperight', () => {
+      this.prevSlide();
+    });
+  }
+
+  // ngAfterViewInit(): void {
+  //   this.createDots();
+  //   this.initializeSwipe();
+  // }
 
   ngOnInit(): void {
     this.showSlides(this.currentSlide);
@@ -21,6 +42,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.createDots();
+    this.initializeSwipe();
   }
 
   startCarousel(): void {
