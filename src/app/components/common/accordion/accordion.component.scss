@@ -17,17 +17,19 @@
     }
 
     .fas {
-      transition: transform 0.2s ease-out;
       font-weight: 300;
       font-size: 18px;
+      transition: transform 0.6s ease-out;
     }
   }
 
   .accordion-content {
     padding: 10px;
-    display: none;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    // max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-out,
+    opacity 0.3s ease-out;
 
     p {
       margin: 0;
@@ -36,16 +38,5 @@
     }
   }
 
-  &.open {
-    .accordion-content {
-      display: block;
-      max-height: 500px;
-    }
 
-    // .accordion-header {
-    //   .fa {
-    //     transform: rotate(45deg);
-    //   }
-    // }
-  }
 }
