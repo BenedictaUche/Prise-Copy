@@ -425,6 +425,9 @@
   .carousel-container {
     background-color: #e1e8f1;
     padding: 8% 0;
+    @media (max-width: 768px) {
+      padding: 15% 0;
+    }
   }
 
   // competitive-advantage section
